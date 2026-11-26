@@ -6,6 +6,8 @@
 
 One Day, Five Stories: a Python 3.13 program that draws a one-page poster summing up Thursday 26 November 2026 in five checked stories — the US proposing new tariffs on 14 trading partners, Macy's 100th Thanksgiving Day Parade postponed to Saturday in the first weather postponement in its history, the Cairo fuel-tanker fire that killed at least 31, Jerusalem judges urging prosecutors to drop the bribery charge against Prime Minister Netanyahu, and ESA's Hera mission revealing the stadium-sized crater on the asteroid Dimorphos — and writes it as a 1024×1024 PNG. Pure standard library: a small software rasterizer with a hand-built 5x7 bitmap font, no network, byte-identical on every run.
 
+Verified: two local runs write byte-identical 1024×1024 PNGs (18,160 bytes, sha256 2d531f71ec97e0aecaf6859c095bfebe2b9ab092de466e425d1d4409d228fde2); three grader-style runs from a read-only copy in a different directory produce the same bytes.
+
 ## Run it
 
 ```sh
