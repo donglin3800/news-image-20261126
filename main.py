@@ -30,6 +30,7 @@ The five stories (each checked against its first publication):
      by NASA's DART in 2022 (ESA, Reuters, CNN, 25 Nov 2026).
 """
 
+import math
 import os
 import struct
 import zlib
@@ -121,7 +122,6 @@ class Canvas:
         for k in range(t):
             rr = r - k
             for a in range(0, 360, 1):
-                import math
                 x = cx + int(rr * math.cos(a * math.pi / 180))
                 y = cy + int(rr * math.sin(a * math.pi / 180))
                 self.set(x, y, c)
@@ -355,7 +355,6 @@ def draw_globe(cv, cx, cy, r):
     cv.disc(cx - r // 3, cy - r // 4, r // 4, (70, 150, 90))
     cv.disc(cx + r // 3, cy + r // 5, r // 5, (70, 150, 90))
     cv.disc(cx + r // 5, cy - r // 2, r // 6, (70, 150, 90))
-    import math
     for dx in range(-r + 6, r - 5, 12):
         dy = int((r * r - dx * dx) ** 0.5)
         cv.line(cx + dx, cy - dy, cx + dx, cy + dy, (90, 140, 190), 1)
